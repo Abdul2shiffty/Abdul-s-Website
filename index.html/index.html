@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul's Creative Space</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: flex-start;
+            height: 100vh;
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background: linear-gradient(to right, #1E3A8A, #0288D1);
+            color: white;
+            padding: 40px;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .intro {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #f1f1f1;
+        }
+
+        .panel-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: auto; /* Pushes panels towards the bottom */
+        }
+
+        .panel {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .panel:hover {
+            transform: scale(1.03);
+            background: linear-gradient(135deg, #80DEEA, #1E3A8A, #0288D1);
+            color: white;
+        }
+
+        .panel h2 {
+            color: #0288D1;
+        }
+
+        .panel p, .panel ul {
+            color: #555;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 16px;
+            background: linear-gradient(to right, #1E3A8A, #0288D1);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #0288D1, #1E3A8A);
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .tournament-section {
+            width: 100%;
+            padding: 20px;
+            background-color: #0288D1;
+            color: white;
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tournament-section h2 {
+            font-size: 24px;
+        }
+
+        .tournament-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tournament-list li {
+            background: #1E3A8A;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Abdul's Creative Space! 🚀</h1>
+        <p class="intro">I am a YouTuber, coder, soccer & basketball player, and gamer. Explore more about me below!</p>
+    </header>
+
+    <div class="panel-container">
+        <div class="panel about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Abdul! I started coding as a hobby and turned it into a passion. Over the years, I've created several projects, from simple web applications to more complex platforms. I'm constantly learning new technologies, exploring the world of AI, and sharing my knowledge through videos on my YouTube channel.</p>
+        </div>
+
+        <div class="panel skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Frontend Development: HTML, CSS, JavaScript, React</li>
+                <li>Backend Development: Node.js, Express, MongoDB</li>
+                <li>Game Development: Unity, C#</li>
+                <li>Video Editing: Adobe Premiere Pro, Final Cut Pro</li>
+            </ul>
+        </div>
+
+        <div class="panel hobbies">
+            <h2>Hobbies and Interests</h2>
+            <ul>
+                <li>Playing soccer and basketball</li>
+                <li>Exploring new video games</li>
+                <li>Learning new coding languages</li>
+            </ul>
+        </div>
+
+        <div class="panel projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li><strong>Weather App:</strong> Real-time weather data using APIs.</li>
+                <li><strong>E-commerce Website:</strong> Built with React and Node.js.</li>
+                <li><strong>2D Maze Game:</strong> Developed with Unity and C#.</li>
+            </ul>
+        </div>
+
+        <div class="panel contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Email: <a href="https://contacts.google.com/person/c2655208787553663497" target="_blank">Abdul's Email</a></li>
+                <li>YouTube: <a href="https://www.youtube.com/channel/UC2o4Fx7WirO9oQ55r6UE5oQ" target="_blank">Abdul's YouTube</a></li>
+                <li>Discord: <a href="https://discord.com/channels/me" target="_blank">yyc.abdul</a></li>
+            </ul>
+        </div>
+
+        <!-- New Tournament Section -->
+        <div class="tournament-section">
+            <h2>Upcoming Fortnite Tournaments</h2>
+            <ul class="tournament-list">
+                <li>Spring Showdown 2025 - March 10th</li>
+                <li>Summer Clash 2025 - June 20th</li>
+                <li>Fortnite World Cup Qualifiers - September 15th</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you for visiting! Connect with me on my Socials! <a href="#">Socials</a> | <a href="fortnite.html">Fortnite Page</a></p>
+    </footer>
+</body>
+</html>
